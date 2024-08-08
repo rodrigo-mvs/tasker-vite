@@ -56,11 +56,13 @@ input {
     padding-right: 100px;
     height: 60px;
     width: 60px;
-    background-color: transparent;
+    background-color: #2d3046;
     border: none;
+    border-radius: 20px;
     color: #969696;
     font-size: 30px;
     cursor: pointer;
+    padding-left: 1%;
 }
 
 .add:hover {
@@ -175,4 +177,15 @@ input {
     border-radius: 25px;
     margin-top: 60px;
     filter: drop-shadow(0 0 1.5em #ffffff);
+}
+
+
+@media screen and (max-width: 900px) {
+    #prompt {
+        width: 100%;
+    }
+    .lista {
+        width: 100%;
+    }
+    
 }
