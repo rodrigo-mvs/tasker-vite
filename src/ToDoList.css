@@ -13,10 +13,11 @@ body {
     outline: none;
 }
 
-h1 {
+#title {
     font-family: "Oi", serif;
     font-size: 50px;
-    font-weight: 50;
+    font-weight: 1;
+    cursor: pointer;
 }
 
 #prompt{
@@ -171,14 +172,18 @@ input {
     color: #52d7de;
 }
 
-#noTasks {
-    max-width: 40%;
+#empty {
     margin: 0 auto;
     border-radius: 25px;
     margin-top: 60px;
-    filter: drop-shadow(0 0 1.5em #ffffff);
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;   
 }
 
+#empty:hover {
+    font-weight: 800;
+    transition: .2s;
+}
 
 @media screen and (max-width: 900px) {
     #prompt {

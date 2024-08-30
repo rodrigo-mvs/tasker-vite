@@ -5,7 +5,6 @@ import { FaTrash } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
 import { FaUndoAlt } from "react-icons/fa";
 import { FaTrashAlt } from "react-icons/fa";
-import RokiRoki from "./assets/notasks.png"; 
 
 
 
@@ -27,7 +26,7 @@ function ToDoList() {
         if (newTask === "") return;
         console.log(newTask + currentDate);
         setNewTask(newTask);
-        setTaskList([...taskList, {text: '[' + currentDate + '] ➜ ' + newTask, done: false}]);
+        setTaskList([...taskList, {text: '[' + currentDate + '] \n ' + newTask, done: false}]);
         setNewTask("");
         document.getElementById("prompt").focus();
     }
@@ -58,10 +57,14 @@ function ToDoList() {
         setTaskList([]);
     }
 
+    function redirectToSite(site) {
+        window.location.href = site;
+    }
 
+    
     return (
         <div>
-            <h1>Tasker</h1>
+            <h1 id="title" onClick={() => { redirectToSite("https://github.com/rodrigo-mvs") }}>Taskerr</h1>
 
             <form id="prompt" onSubmit={addEvent}>
                 <input type="text" value={newTask} onChange={(e) => setNewTask(e.target.value)} placeholder="Enter a task" />
@@ -72,7 +75,7 @@ function ToDoList() {
 
             
             <div className="lista">
-                { taskList.length < 1 ? <img id="noTasks" src={RokiRoki}/> :
+                { taskList.length < 1 ? <div id="empty">NO TASKS ADDED</div> :
 
                 taskList.map((task, index) => (
 
