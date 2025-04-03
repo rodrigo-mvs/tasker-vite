@@ -7,17 +7,17 @@
 
 A simple task management app built with React and Vite.
 
-Features
-  Create tasks
-  Mark tasks as done
-  Delete tasks
+### Features
+- Create tasks  
+- Mark tasks as done  
+- Delete tasks  
 
-Tech Stack
-  React
-  Vite
+### Tech Stack
+- React  
+- Vite  
 
-Usage
-  Clone the repo.
-  Install dependencies: npm install.
-  Run: npm run dev.
-  Open in your browser.
+### Usage
+1. Clone the repo.  
+2. Install dependencies: ``` npm install ```
+3. Run: ``` npm run dev ```
+4. Open in your browser
