@@ -64,7 +64,7 @@ function ToDoList() {
     
     return (
         <div>
-            <h1 id="title" onClick={() => { redirectToSite("https://github.com/rodrigo-mvs") }}>Taskerr</h1>
+            <h1 id="title" onClick={() => { redirectToSite("https://github.com/rodrigo-mvs") }}>Tasker</h1>
 
             <form id="prompt" onSubmit={addEvent}>
                 <input type="text" value={newTask} onChange={(e) => setNewTask(e.target.value)} placeholder="Enter a task" />
